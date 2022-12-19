@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 62.5%;
+    letter-spacing: 2px;
+}
+
+.hero {
+    background-image: url(/hero.jpeg);
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    background-color: white;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .45rem;
+    width: 75vw;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin-bottom: 3.5rem;
+    margin-top: 0;
+}
+
+.btn {
+    border: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: .5rem 1rem;
+    border-radius: .45rem;
+    color: white;
+    background-color: #49a6e9 ;
+    letter-spacing: 2px;
+    transition: all .3s linear;
+    border: solid 1px #49a6e9;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #49a6e9;
+    border: 1px solid #49a6e9 ;
+}
+
+.modal {
+    position: fixed;
+    height: 12.5rem;
+    top: 40vh;
+    left: 12.5vw;
+    visibility: hidden;
+    z-index: -10;
+}
+
+.open-modal {
+    visibility: visible;
+    z-index: 10;
+}
+
+.modal-container {
+    position: relative;
+    background-color: white;
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
+.close-btn{
+    
+    background-color: white;
+    border: 0;
+    color: red;
+    font-size: large;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5rem;
+    align-self: flex-start;
+}
+
