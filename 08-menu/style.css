@@ -1,0 +1,141 @@
+body {
+    background-color: #dae2ec;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 62.5%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    height: 25vh;
+    display: flex;
+    align-items: flex-end;
+    font-size: 2.3rem;
+
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    margin-bottom: 2rem;
+    /* justify-content: space-around; */
+}
+
+.list-item {
+    margin-left: 0.5rem;
+}
+
+.btn {
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: .35rem;
+    padding: 0.5rem 1rem;
+    border: 1px gray solid;
+    background-color: white;
+    transition: all 0.35s linear;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+
+}
+
+.btn:hover {
+    color: white;
+    background-color: goldenrod;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+    margin: 0 auto;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+    /* width: 70vw; */
+}
+
+
+.img {
+    width: 100%;    
+    border-radius: 0.35rem;
+    border: 2px solid goldenrod;
+    object-fit: cover;
+    height: 200px;
+
+}
+
+.menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px dashed gray;
+}
+
+.menu-item-title {
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin: 1rem 0;
+}
+
+.menu-item-price {
+    font-size: 1rem;
+    color: goldenrod;
+    
+}
+
+.menu-item-desc {
+    margin-top: 1.3rem;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+@media screen and (min-width:770px) {
+    .menu {
+        width: 90vw;
+    }
+    .menu-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+        width: 85%;
+        margin: 2rem auto;
+    }    
+    .menu-item-body {
+        align-self: start;
+    }
+
+    .menu-item-price, .menu-item-header h5 {
+        margin-top: 0;
+        margin-bottom: 0.2rem;
+    }
+
+    .menu-item-desc {
+        font-size: 1.1rem;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .menu-item-img {
+        align-self: start;
+        margin-top: 0.5rem;
+    }
+    .menu-item-body {
+        align-self: start;
+    }
+    .img {
+        height: 150px;
+    }
+}
