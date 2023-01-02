@@ -1,0 +1,83 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 62.5%;
+    margin: 0;
+}
+
+.photo-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-collapse {
+    display: none;
+}
+
+
+header {
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: rgb(26, 25, 25,0.7);
+
+}
+
+
+.video-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.switch-btn {
+    position: absolute;
+    bottom: 0.7rem;
+    left: 0.7rem;
+    padding: 0.5rem;
+    border-radius: 0.45rem;
+    border: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 7rem;
+}
+
+.switch-btn span {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: dodgerblue;
+}
+
+.switch {
+    position: absolute;
+    background-color: dodgerblue;
+    width: 45%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 0.45rem;
+    transition: all .3s linear;
+}
+
+.slide {
+    left: 45%;
+    width: 55%;
+}
+
+
+
